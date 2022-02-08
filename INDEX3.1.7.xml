@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>HibernateConfig</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>InitHibernate</servlet-name>
+    <servlet-class>InitHibernate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitHibernate</servlet-name>
+    <url-pattern>/init</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
+
+Step 3.1.8: Checking for servlet-api.jar
+●	Before building the project, we need to add servlet-api.jar to the project
+●	Servlet-api.jar file is already present in your practice lab. (Refer FSD: Lab Guide - Phase 2)
+●	To add it to the project, follow the below mentioned steps:
+o	In the Project Explorer, right click on HibernateConfig and choose Properties
+o	Select Java Build Path from the options on the left
+o	Click on Libraries tab on the right
+o	Under ClassPath, expand the node that says Apache Tomcat
+o	If there is an existing entry for servlet-api.jar, then click on Cancel and exit the window
+o	If it is not there, then click on Classpath entry and click on Add External JARs button on the right
+o	From the file list, select servlet-api.jar file and click on Ok
+o	Click on Apply and Close
+
+
